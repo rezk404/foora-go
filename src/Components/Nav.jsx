@@ -75,12 +75,6 @@ const Nav = () => {
 					>
 						Leaderboard
 					</Link>
-					<a href="#stars" className="nav-item text-white nav-link">
-						Captins
-					</a>
-					<a href="#about" className="nav-item text-white nav-link">
-						About
-					</a>
 				</div>
 				<div className="profileContainer d-flex ms-auto order-5 mx-5">
 					{/* <div className="dropdown p-2">
