@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.LoginWr {
+  background: #1f1d2b;
+  padding: 0 40px 0 40px;
+}
+
+.login-text {
+  color: rgba(23, 42, 79, 255);
+  /* color: #ff9800; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#loginBtn {
+  color: #ffffff;
+  background-color: #172a4f;
+  border-radius: 50px;
+  transition: all.8s ease-in-out;
+}
+#loginBtn:hover {
+  background-color: #1f1d2b;
+}
+#create {
+  color: #ffffff;
+  background-color: #ff9800;
+  border-radius: 20px;
+}
+#create:hover {
+  background-color: #1f1d2b;
+}
+.mainLoginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.mainLogin {
+  width: 1000px;
+  height: 600px;
+  background: #fff;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.side-image {
+  background-image: url("../src/imags/players.JPG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+img.login {
+  width: 35px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.textLogin {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffff;
+  font-size: 18px;
+}
+i {
+  font-weight: 400;
+  font-size: 15px;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+img.logo {
+  position: relative !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+}
+.logooo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  top: 6rem;
+  left: 5%;
+  padding-right: 0.3rem;
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(20, 42, 77);
+  font-size: 16px;
+}
+.forra {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.input-box {
+  width: 350px;
+  box-sizing: border-box;
+}
+.input-box header {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+/*.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}*/
+.form-floating input {
+  border-radius: 20px;
+}
+
+.input {
+  height: 45px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  margin-bottom: 20px;
+  color: #40414a;
+}
+.input-box .input-field label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.input-field .input:focus ~ label {
+  top: -10px;
+  font-size: 13px;
+}
+.input-field .input:valid ~ label {
+  top: -10px;
+  font-size: 13px;
+  color: #5d5076;
+}
+.input-field .input:focus,
+.input-field .input:valid {
+  border-bottom: 1px solid #743ae1;
+}
+
+.signup {
+  text-align: center;
+  font-size: small;
+  margin-top: 25px;
+}
+span a {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgba(37, 95, 156, 0.9);
+  transition: 0.5s;
+}
+span a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+@media only screen and (max-width: 1000px) {
+  .logooo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 5rem;
+    left: 4rem;
+    padding-right: 0.3rem;
+    width: 100%;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: rgb(20, 42, 77);
+    font-size: 16px;
+  }
+  .side-image {
+    border-radius: 10px 10px 0 0;
+  }
+  .logooo img {
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    left: 47%;
+  }
+  .text {
+    position: absolute;
+    top: 70%;
+    text-align: center;
+  }
+  .text p,
+  i {
+    font-size: 17px;
+  }
+  .mainLogin {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .logooo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 11rem;
+    left: -9rem;
+    padding-right: 0.3rem;
+    width: 100%;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: rgb(20, 42, 77);
+    font-size: 16px;
+  }
+  .side-image {
+    border-radius: 10px 10px 0 0;
+  }
+  .logooo img {
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    left: 47%;
+  }
+  .text {
+    position: absolute;
+    top: 70%;
+    text-align: center;
+  }
+  .text p,
+  i {
+    font-size: 17px;
+  }
+  .mainLogin {
+    max-width: 420px;
+    width: 100%;
+  }
+}
+
+form div div.errorDiv {
+  color: rgb(255, 0, 0);
+  font-size: 14px;
+  margin: 0.5rem auto;
+}

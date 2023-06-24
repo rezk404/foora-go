@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap");
+
+.mainReg {
+  border-radius: 2rem 0 0 2rem;
+}
+form div div.errorDiv {
+  color: rgb(255, 0, 0);
+  font-size: 14px;
+  margin: 0.5rem auto;
+}
+.side-image {
+  background-image: url("../src/imags/players.JPG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.containerSginup {
+  background-color: #201c2b;
+  height: 100%;
+}
+.form-control:hover {
+  color: #635589;
+}
+.form-bg {
+  background-color: #201c2b;
+}
+.card-body h1 {
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.form-floating input {
+  border-radius: 20px;
+}
+.form-select {
+  border-radius: 20px;
+}
+.input-group {
+  border-radius: 20px;
+}
+.success {
+  justify-content: center;
+  text-align: center;
+  color: #2196f3;
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+.card-registration .select-arrow {
+  top: 13px;
+}
+.signupForm {
+  background-color: #ffffff !important;
+}
+.registerText {
+  color: #201c2b !important;
+}
+@media (max-width: 770px) {
+  .profile-pic-div {
+    display: none;
+  }
+  .profile-pic-div img {
+    display: none;
+  }
+}
+.GameUpdateContainer {
+  background-color: transparent !important;
+  transform: translateX(-55%);
+}

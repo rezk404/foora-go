@@ -1,0 +1,47 @@
+.social-icons-container {
+  display: flex;
+}
+
+.social-icon {
+  margin-right: 10px;
+  transition: color 0.5s ease-in-out;
+  color: rgba(0, 0, 0, 0.441);
+}
+
+.social-icon:hover {
+  color: #000000;
+}
+
+.social-icon.facebook:hover {
+  color: #1877f2;
+}
+
+.social-icon.linkedin:hover {
+  color: #0e76a8;
+}
+
+.social-icon.instagram:hover {
+  color: #c13584;
+}
+.card {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 991px) {
+  .profileRate {
+    width: 60% !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (max-width: 768px) {
+  .profileRate {
+    width: 100% !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
