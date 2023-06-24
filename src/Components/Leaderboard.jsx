@@ -38,36 +38,38 @@ const Leaderboard = () => {
 								playerData={playersData[2]}
 							/>
 						</div>
+						<div className="row gap-2 mt-5">
+							{playersData
+								.toSpliced(0, 3)
+								.map((playerData, index) => {
+									return (
+										<div
+											className="col-md-12 d-flex py-2 align-items-center gap-3"
+											style={{
+												backgroundColor: 'white',
+												border: '1px solid black',
+												borderRadius: '12px',
+												boxShadow:
+													'0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
+											}}
+										>
+											<p>#{index + 4}</p>
+											<img
+												src={playerData.image}
+												alt={playerData.name}
+												style={{
+													width: '3rem',
+													height: '3rem',
+													borderRadius: '100%',
+												}}
+											/>
+											<p>{playerData.name}</p>
+										</div>
+									);
+								})}
+						</div>
 					</>
 				)}
-				<div className="row gap-2 mt-5">
-					{playersData.toSpliced(0, 3).map((playerData, index) => {
-						return (
-							<div
-								className="col-md-12 d-flex py-2 align-items-center gap-3"
-								style={{
-									backgroundColor: 'white',
-									border: '1px solid black',
-									borderRadius: '12px',
-									boxShadow:
-										'0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
-								}}
-							>
-								<p>#{index + 4}</p>
-								<img
-									src={playerData.image}
-									alt={playerData.name}
-									style={{
-										width: '3rem',
-										height: '3rem',
-										borderRadius: '100%',
-									}}
-								/>
-								<p>{playerData.name}</p>
-							</div>
-						);
-					})}
-				</div>
 			</section>
 			<Footer />
 		</div>
